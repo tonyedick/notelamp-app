@@ -1,0 +1,6 @@
+{
+  "name": "NoteLamp",
+  "description": "Offline-first Bible-aware note-taking and sermon-reading application with KJV scripture lookup, PDF reader, and Preacher Mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --app-font-scale: 1rem;
+    --app-bg: #FAF7F2;
+    --app-card-bg: #FFFFFF;
+    --app-text: #1C1917;
+    --app-border: rgba(180, 83, 9, 0.12);
+  }
+
+  [data-theme="light"] {
+    --app-bg: #FFFFFF;
+    --app-card-bg: #F8FAFC;
+    --app-text: #0F172A;
+    --app-border: #E2E8F0;
+  }
+
+  [data-theme="cream"] {
+    --app-bg: #FAF7F2;
+    --app-card-bg: #FFFFFF;
+    --app-text: #1C1917;
+    --app-border: rgba(180, 83, 9, 0.12);
+  }
+
+  [data-theme="dark"] {
+    --app-bg: #0F1115;
+    --app-card-bg: #18181B;
+    --app-text: #F4F4F5;
+    --app-border: #27272A;
+  }
+
+  [data-font-size="small"] {
+    --app-font-scale: 0.875rem;
+    --bible-font-scale: 0.95rem;
+  }
+
+  [data-font-size="medium"] {
+    --app-font-scale: 1rem;
+    --bible-font-scale: 1.075rem;
+  }
+
+  [data-font-size="large"] {
+    --app-font-scale: 1.15rem;
+    --bible-font-scale: 1.25rem;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-size: var(--app-font-scale);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--app-bg);
+    color: var(--app-text);
+  }
+}
+
+.font-serif {
+  font-family: 'Newsreader', Georgia, Cambria, serif;
+}
+
+.bible-text-scale {
+  font-size: var(--bible-font-scale, 1.05rem);
+}
+
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 150, 150, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.45);
+}
